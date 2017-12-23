@@ -6,8 +6,9 @@
   <div class="col-md-6">
     <%= render :partial => 'form' %>
   </div>
-  <div class="col-md-6">
-    <%= link_to t(:write_email), write_email_admin_newsletter_subscribers_path, class: "btn btn-success" %>
+  <div class="col-md-6 text-right">
+    <br>
+    <%= link_to "Buat Email", write_email_admin_newsletter_subscribers_path, class: "btn btn-success" %>
   </div>
 </div>
 
@@ -15,7 +16,6 @@
   <thead>
     <tr data-hook="categories_header">
       <th><%= t(:email) %></th>
-      <th><%= t(:action) %></th>
     </tr>
   </thead>
   <tbody>
